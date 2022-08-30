@@ -419,3 +419,9 @@ footer .container3 .socials .insta,
     width: 100%;
   }
 }
+
+@media (max-width: 404px) {
+  .main-image p {
+    padding: 10px 0px 50px;
+  }
+}
