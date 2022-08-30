@@ -1,0 +1,69 @@
+.menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 97%;
+}
+.menu-list1 {
+  width: 240px;
+  height: 307px;
+  left: 388px;
+  top: 262px;
+  background: rgba(255, 255, 255, 0.83);
+  border: 0.3px solid rgba(0, 48, 46, 0.14);
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px 0px;
+}
+.menu-list1 img {
+  width: 90px;
+  height: 90px;
+}
+.menu-list1 h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: #00302e;
+  margin-top: 0.5rem;
+}
+.menu-list1 .story {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.69);
+  padding: 5px 20px;
+}
+.menu-list1 .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 33px;
+  color: #00302e;
+}
+.menu-list1 .add-to-cart {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 33px;
+  text-align: right;
+  color: #06e775;
+}
+.price-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.5rem;
+}

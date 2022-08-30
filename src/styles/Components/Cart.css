@@ -1,0 +1,125 @@
+.order-area {
+  margin-top: 50px;
+}
+.order-total {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: #00302e;
+}
+.order-card,
+.order-name {
+  margin: 0 0 10px 5%;
+  border: none;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.order-total {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 10px 5%;
+  border: none;
+  width: 90%;
+  display: flex;
+  padding: 10px;
+}
+.order-item,
+.order-qty,
+.order-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: #00302e;
+}
+
+.qty-btn {
+  font-weight: bold;
+  background-color: white;
+  outline: none;
+  border: 1px solid #053742;
+  padding: 2px 7px;
+}
+.qty-btn:hover {
+  background-color: #053742;
+  color: white;
+}
+.qty-btn:active {
+  background: #51c4d3;
+}
+.qty-input {
+  width: 30px;
+  text-align: center;
+}
+.delete-btn {
+  outline: none;
+  border: none;
+  background: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #c92c33;
+}
+.delete-btn:hover {
+  background-color: #c92c33;
+  color: white;
+}
+.delete-btn:active {
+  background: crimson;
+  border: 1px solid crimson;
+}
+.total {
+  margin-right: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.69);
+}
+.total-price {
+  text-align: right;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 33px;
+  color: #00302e;
+}
+
+.place-order-btn {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  color: #f3c294;
+  width: 479px;
+  height: 60px;
+  place-items: center;
+  align-items: center;
+  background: #00302e;
+}
+
+.place-order-btn:hover {
+  background-color: white;
+  color: #00302e;
+  border: 1px solid #00302e;
+}
+.place-order-btn:active {
+  background-color: #00302e;
+  color: #f3c294;
+}
+.name-del {
+  display: flex;
+  flex-direction: column;
+}

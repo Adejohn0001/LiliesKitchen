@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.dashboard {
+  overflow-y: scroll;
+  background: #ffffff;
+  display: flex;
+}
+.navigation {
+  background: #fbfbfb;
+  width: 25%;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: -50rem;
+}
+.logo-icon {
+  display: flex;
+  margin-top: -820px;
+  position: fixed;
+}
+.logo-icon img {
+  width: 57.48px;
+  height: 67px;
+}
+.logo-icon h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #00302e;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: -28rem;
+  position: fixed;
+}
+.row1 {
+  display: flex;
+  margin: 10px 30px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.row1:active {
+  background: #efefef;
+}
+.row2 {
+  display: flex;
+  margin: 10px 30px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 12px;
+}
+.row3 {
+  display: flex;
+  margin: 10px 30px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 12px;
+}
+.row4 {
+  display: flex;
+  margin: 10px 30px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  width: 90%;
+}
+.cart-link{
+  text-decoration: none;
+}
+
+.row1 .to-dashboard {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 2px 0px 0px 6px;
+  text-decoration: none;
+}
+
+.row2,
+.row3,
+.row4 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin: 2px 0px 0px 6px;
+}
+.row2 p{
+  margin: 2px 0px 0px 6px;
+}
+.row3 p{
+  margin: 2px 0px 0px 6px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0 auto;
+  width:80%;
+}
+.menus{
+  padding: 0px;
+  margin: 0 auto;
+  width:80%;
+  margin-top: 5rem;
+}
+
+.dashboard-greeting {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 40px;
+  color: #00302e;
+  margin: 105px 40px 0px;
+  display: flex;
+}
+.greeting{
+  margin-right: 0.5rem;
+}
+.what-are-you-buying {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.69);
+  margin: 0px 0px;
+}
+.girl-image{
+  margin: 85px 40px 0px;
+}
+.containers1 {
+  display: flex;
+  justify-content: space-between;
+}
