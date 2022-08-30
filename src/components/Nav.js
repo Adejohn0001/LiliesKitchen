@@ -36,6 +36,7 @@ li{
 
 .link{
   color: white;
+  font-size: 17px;
 }
 a{
   color: aliceblue;
