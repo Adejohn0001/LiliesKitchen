@@ -11,14 +11,15 @@
   height: 170vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: -50rem;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .logo-icon {
   display: flex;
-  margin-top: -820px;
+  width: 22.5%;
+  justify-content: center;
   position: fixed;
+  margin-top: 5.2rem;
 }
 .logo-icon img {
   width: 57.48px;
@@ -38,46 +39,85 @@
 .column {
   display: flex;
   flex-direction: column;
-  margin-top: -28rem;
+  width: 100%;
   position: fixed;
+  margin-top: 13rem;
 }
 .row1 {
   display: flex;
-  margin: 10px 30px;
+  margin: 10px 0px;
   padding: 10px 0px;
-  margin: 0 auto;
-  border-radius: 12px;
 }
 .row1:active {
   background: #efefef;
 }
 .row2 {
   display: flex;
-  margin: 10px 30px;
+  margin: 10px 0px;
   padding: 10px 0px;
-  margin: 0 auto;
-  width: 100%;
-  border-radius: 12px;
 }
 .row3 {
   display: flex;
-  margin: 10px 30px;
+  justify-content: space-between;
+  width: 22%;
+  margin: 10px 0px;
   padding: 10px 0px;
-  margin: 0 auto;
-  width: 100%;
-  border-radius: 12px;
+}
+.counter {
+  width: 24px;
+  height: 24px;
+  left: 225px;
+  top: 10px;
+  background: #06e775;
+  border: 1px solid #06e775;
+  border-radius: 5px;
+}
+.p-img {
+  display: flex;
+}
+.counter p {
+  width: 10px;
+  height: 19px;
+  left: 232px;
+  top: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.counter-carts {
+  width: 24px;
+  height: 24px;
+  left: 225px;
+  top: 10px;
+  background: #f3c294;
+  border: 1px solid #f3c294;
+  border-radius: 5px;
+}
+.counter-carts .o{
+  width: 10px;
+  height: 19px;
+  left: 232px;
+  top: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 .row4 {
   display: flex;
-  margin: 10px 30px;
+  justify-content: space-between;
+  width: 22.4%;
+  margin: 10px 0px;
   padding: 10px 0px;
-  margin: 0 auto;
-  width: 90%;
 }
-.cart-link{
+.cart-link {
   text-decoration: none;
 }
-
 .row1 .to-dashboard {
   font-family: "Poppins";
   font-style: normal;
@@ -100,10 +140,10 @@
   color: #707070;
   margin: 2px 0px 0px 6px;
 }
-.row2 p{
+.row2 p {
   margin: 2px 0px 0px 6px;
 }
-.row3 p{
+.row3 p {
   margin: 2px 0px 0px 6px;
 }
 .menu {
@@ -111,13 +151,13 @@
   flex-direction: column;
   padding: 0px;
   margin: 0 auto;
-  width:80%;
+  width: 80%;
 }
-.menus{
+.menus {
   padding: 0px;
   margin: 0 auto;
-  width:80%;
-  margin-top: 5rem;
+  width: 80%;
+  margin-top: 1.5rem;
 }
 
 .dashboard-greeting {
@@ -130,7 +170,7 @@
   margin: 105px 40px 0px;
   display: flex;
 }
-.greeting{
+.greeting {
   margin-right: 0.5rem;
 }
 .what-are-you-buying {
@@ -142,10 +182,21 @@
   color: rgba(0, 0, 0, 0.69);
   margin: 0px 0px;
 }
-.girl-image{
+.girl-image {
   margin: 85px 40px 0px;
 }
 .containers1 {
   display: flex;
   justify-content: space-between;
+}
+.cart-btn{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin: 2px 0px 0px 6px; 
+  background-color: #fbfbfb;
+  border: none;
 }
