@@ -200,3 +200,10 @@
   background-color: #fbfbfb;
   border: none;
 }
+.food-menus {
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-item {
+  width: 900px;
+}

@@ -1,49 +1,48 @@
-import burgers from '../../src/Assets/Images/burger.png'
-import rice from '../../src/Assets/Images/rice.png'
-import balls from '../../src/Assets/Images/balls.png'
-import sweet from '../../src/Assets/Images/sweet.png'
-import bread from '../../src/Assets/Images/bread.png'
-import cakes from '../../src/Assets/Images/Cakes.png' 
+const card = {
+    productItems:[
+        {
+            id: "1",
+            name: "Cheeseburger",
+            price: 1000,
+            image: "../../src/Assets/Images/burger.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        },
+        {
+            id: "2",
+            name: "Stir Fry Pasta",
+            price: 1000,
+            image: "../../src/Assets/Images/rice.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        },
+        {
+            id: "3",
+            name: "Meat Balls",
+            price: 1000,
+            image: "../../src/Assets/Images/balls.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        },
+        {
+            id: "4",
+            name: "Wheatsheaf Old Glossop",
+            price: 1000,
+            image: "../../src/Assets/Images/sweet.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        },
+        {
+            id: "5",
+            name: "Blueberry Toasts",
+            price: 1000,
+            image: "../../src/Assets/Images/bread.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        },
+        {
+            id: "6",
+            name: "Mohrensuppe Soup",
+            price: 1000,
+            image: "../../src/Assets/Images/Cakes.png",
+            description: "The in-house pasta and chicken by chef Moose"
+        }
+    ]
+}
 
-
-const CardData = [
-    {
-        img: burgers,
-        title: 'Cheeseburger',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-    {
-        img: rice,
-        title: 'Stir Fry Pasta',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-    {
-        img: balls,
-        title: 'Meat Balls',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-    {
-        img: sweet,
-        title: 'Wheatsheaf Old Glossop',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-    {
-        img: bread,
-        title: 'Blueberry Toasts',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-    {
-        img: cakes,
-        title: 'Mohrensuppe Soup',
-        description: 'The in-house pasta and chicken by chef Moose', 
-        price: "N1000.00",
-    },
-];
-
-
-export default CardData
+export default card

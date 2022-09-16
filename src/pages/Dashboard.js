@@ -8,12 +8,14 @@ import Cart from'../../src/Assets/Images/Cart.png'
 import girl from'../../src/Assets/Images/girl-image.png'
 import { Link } from 'react-router-dom'
 import Modal from '../components/Modals/Modal'
-import Menu from '../components/Menu'
+import ModalOrder from '../../src/components/Modals/ModalOrder'
+import Item from '../components/Item'
+import Data from '../components/Data'
 
 
-
-const Dashboard = () => {
-  const [show, setShow] = useState(false)
+const Dashboard = props => {
+  const [show, setShow] = useState(false);
+  const [view, setView] = useState(false);
 
   var date = new Date();
   var hours = date.getHours();
@@ -27,7 +29,7 @@ const Dashboard = () => {
   } else {
     message = "Good Evening";
   }
-  let user = JSON.parse(sessionStorage.getItem('data'))
+  let user = JSON.parse(sessionStorage.getItem('data'));
  
   return (
     <div className='dashboard '>
@@ -49,7 +51,7 @@ const Dashboard = () => {
               </div>
 
               <div className='row3'>
-                <div className='p-img'>
+                <div className='p-img' onClick={() => setView(true) }>
                    <div className='home-image'> <img src={Order} alt='profile-icon' /></div>
                    <div><p>Order</p></div>
                 </div>
@@ -69,6 +71,8 @@ const Dashboard = () => {
               </div>
               <div className='modals'>
                 <Modal  onClose={() => setShow(false)} show={ show } />
+                <ModalOrder onClose={() => setView(false)} view={ view } />
+
               </div>
             </div>
       </div>
@@ -81,8 +85,20 @@ const Dashboard = () => {
           <div><img src={girl} alt='girl' className='girl-image' /> </div>
         </div>
 
-        <div className='menus'>
-          <Menu />
+        <div className='food-menus'>
+          {Data.productData.map((item, id)=>{
+            return (
+                 <Item  
+              img={item.img} 
+              title={item.title} 
+              description={item.description}
+              price={item.price} 
+              item={item}
+              key={id} />
+
+            )
+
+          })}
         </div>
 
       </div>

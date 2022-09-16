@@ -1,12 +1,15 @@
 .menus{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0px 40px 0px 20px;
     width: 100%;
     margin-top: -0.5rem;
 }
+.list-item {
+  display: flex;
+  padding: 0px 40px 0px 20px;
+  width: 33%;
+}
 .menu-list1 {
+  display: flex;
   width: 240px;
   height: 307px;
   left: 388px;
@@ -23,11 +26,11 @@
     align-items: center;
     padding: 40px 30px 0px;
 }
-.menu-list1 img {
+.details img {
   width: 90px;
   height: 90px;
 }
-.menu-list1 h6 {
+.details h6 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -61,6 +64,8 @@
   font-size: 13px;
   line-height: 33px;
   text-align: right;
+  background-color: #ffffff;
+  border: none;
   color: #06e775;
 }
 .price-cart{
