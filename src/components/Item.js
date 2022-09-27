@@ -4,6 +4,8 @@ import { useCart } from 'react-use-cart';
 
 const Item = (props) => {
   const { addItem } = useCart();
+
+  
   return (
     <div className='list-item'>
         <div className='menu-list1'>
@@ -14,7 +16,7 @@ const Item = (props) => {
                 <p className='story'> {props.description} </p>
                 <div className='price-cart'>
                   <p className='price'>N {props.price} </p>
-                  <button onClick={() => addItem(props.item)} className='add-to-cart'> Add to Cart</button>
+                  <button onClick={() => addItem(props.item)  } className='add-to-cart'> Add to Cart</button>
                 </div>
             </div>
           </div>

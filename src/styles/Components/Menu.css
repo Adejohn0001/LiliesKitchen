@@ -5,11 +5,12 @@
 }
 .list-item {
   display: flex;
+  flex-direction: column;
   padding: 0px 40px 0px 20px;
-  width: 33%;
 }
 .menu-list1 {
   display: flex;
+  flex-wrap: wrap;
   width: 240px;
   height: 307px;
   left: 388px;
@@ -37,6 +38,7 @@
   font-size: 17px;
   line-height: 33px;
   color: #00302e;
+  text-align: center;
   margin-top: 0.5rem;
 }
 .menu-list1 .story {

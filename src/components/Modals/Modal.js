@@ -1,10 +1,159 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../styles/Components/Modals/ModalCart.css'
 import '../../styles/Components/Modals/Modal.css'
 import { useCart } from 'react-use-cart';
-import { ToastContainer, toast } from 'react-toastify';
+import ModalPay from '../../components/Modals/ModalPay';
+import styled from 'styled-components';
 
+const StyledModal = styled.div`
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+position: fixed;
+top: 0;
+background-color: rgba(0, 0, 0, 0.1);
+transition: all 0.5s ease-in-out;
+
+.modal-content {
+  width: 660px;
+  background-color: #fff;
+  height: 100vh;
+}
+
+th {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.69);
+  margin-top: 113px;
+}
+.your-cart {
+  margin-top: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: #00302e;
+}
+.cart-img {
+  width: 80px;
+  height: 80px;
+  left: 739px;
+  top: 170px;
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  color: #00302e;
+}
+.rm-btn {
+  width: 50px;
+  height: 21px;
+  left: 824px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  color: #c92c33;
+  background-color: #ffffff;
+  border: none;
+}
+.title-rm {
+    margin-top: 0.7rem;
+}
+.item {
+  width: 40%;
+}
+.items {
+  display: flex;
+}
+.qty,
+.price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 33px;
+  color: #00302e;
+}
+.total {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.69);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 2.5rem;
+}
+.total span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 33px;
+  color: #00302e;
+}
+.checkout-btn {
+  width: 479px;
+  height: 60px;
+  left: 821px;
+  top: 778px;
+  background: #00302e;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  color: #f3c294;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.close-button {
+  margin-left: 0px;
+  box-shadow: 3px 3px 8px #00302e;
+  width: 6%;
+  display: none;
+}
+
+
+
+@media (max-width: 750px) {
+
+  .modal-body {
+    padding: 10px 32px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .close-button {
+    margin-left: 0px;
+    box-shadow: 3px 3px 8px #00302e;
+    width: 6%;
+    display: block;
+  }
+}
+
+`
 const Modal = props => {
+
+  const [see, setSee] = useState(false)
 
     const {
         items,
@@ -13,21 +162,12 @@ const Modal = props => {
         removeItem,
      } = useCart();
 
-     const handleCheckout = (e) => {
-        e.preventDefault();
-
-        toast.success("Checkout Successful");
-        setInterval(() => {
-          window.location= '/checkout'
-        }, 3000);
-     }
-
     if (!props.show) {
         return null
     }
   return (
-    <div className='modal' onClick={props.onClose} >
-        <ToastContainer />
+    <StyledModal className='modal' onClick={props.onClose} >
+
         <div className='modal-content ' onClick={e => e.stopPropagation()}>
         <div className='close-button'>
           <button onClick={props.onClose} className="button">
@@ -87,10 +227,13 @@ const Modal = props => {
                 <p className='total'>Total: <span>N {cartTotal}</span></p>
             </div>
             <div className='modal-footer' >
-                <button className='checkout-btn' onClick={handleCheckout}> Checkout</button>
+                <button className='checkout-btn' onClick={() => setSee(true) } > Checkout</button>
+            </div>
+            <div className='modals'>
+               <ModalPay  onClose={() => setSee(false)} see={ see } />
             </div>
         </div>
-    </div>
+    </StyledModal>
   )
 }
 

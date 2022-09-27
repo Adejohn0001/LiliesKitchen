@@ -42,14 +42,6 @@ body {
   padding: 0px 40px;
 }
 
-.menu {
-  width: 80%;
-  text-align: center;
-  margin-left: 0%;
-  display: flex;
-}
-.menu .card {
-}
 .add-btn {
   outline: none;
   border: none;
